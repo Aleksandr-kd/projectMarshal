@@ -17,6 +17,6 @@ public class RealtListingPage extends BasePage<RealtListingPage> {
     public void checkCountCards() {
         int countCard = waiters.waitElementIsVisible($(card)).findElements(card).size();
 
-        Assert.assertEquals(countCard, 30);
+        Assert.assertEquals(countCard, 32);
     }
 }
