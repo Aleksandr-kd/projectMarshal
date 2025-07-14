@@ -7,7 +7,7 @@ import tests.base.BaseTest;
 public class SearchApartTest extends BaseTest {
 
     @Test
-    public void checkIsRedrectToListing() throws InterruptedException {
+    public void checkIsRedrectToListing() {
         basePage.open("https://realt.by/");
 
         realtHomePage

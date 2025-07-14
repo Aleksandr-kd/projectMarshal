@@ -14,7 +14,7 @@ public class RealtListingPage extends BasePage<RealtListingPage> {
 
     private final By card = By.xpath("//div[@class='sm:w-full w-full p-1.5 sm:p-2.5']");
 
-    public void checkCountCards() throws InterruptedException {
+    public void checkCountCards() {
         int countCard = waiters.waitElementIsVisible($(card)).findElements(card).size();
 
         Assert.assertEquals(countCard, 30);
